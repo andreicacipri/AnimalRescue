@@ -1,7 +1,5 @@
 package org.fasttrackit;
 
-import java.time.LocalDateTime;
-
 /**
  * Hello world!
  *
@@ -9,33 +7,17 @@ import java.time.LocalDateTime;
 public class App {
     public static void main(String[] args) {
 
-        Animal firstAnimal = new Animal();
-        firstAnimal.name = "Caine";
-        firstAnimal.health = 9;
-        firstAnimal.favactivity = "alergare";
+        Animal firstAnimal = new Animal("Roky",6,7,3, "Jr Canin","Running" );
 
-        Adopter firstAdopter = new Adopter();
-        firstAdopter.name = "Andrei";
-        firstAdopter.money = 500;
+        Adopter firstAdopter = new Adopter("Andrei",500);
 
-        Food firstFood = new Food();
-        firstFood.name = "Oase";
-        firstFood.price = 15;
-        firstFood.quantity = 4;
-        firstFood.year = LocalDateTime.now();
+        Food firstFood = new Food("Jr Canin",30.5,20,2020, true );
 
-        RecreationActivity firstRecreation = new RecreationActivity();
-        firstRecreation.name = "Alergare";
+        RecreationActivity firstRecreation = new RecreationActivity("Running");
 
-        Doctor firstDoctor = new Doctor();
-        firstDoctor.name = "Dr.Marcu";
-        firstDoctor.specialization = "veterinar";
+        Doctor firstDoctor = new Doctor("Dr.Marcu","dog specialization");
 
-        Pet firstPet = new Pet();
-        firstPet.inHouse = true;
-
-        Dog firstDog = new Dog();
-        firstDog.bark = true;
+        Dog firstDog = new Dog("Rex",8,3,9,"Cane","Running",true,true);
 
         Game newGame = new Game();
         newGame.adopter = firstAdopter;
