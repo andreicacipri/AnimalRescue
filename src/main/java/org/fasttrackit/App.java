@@ -1,5 +1,10 @@
 package org.fasttrackit;
 
+import sun.util.resources.LocaleData;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 /**
  * Hello world!
  *
@@ -7,22 +12,49 @@ package org.fasttrackit;
 public class App {
     public static void main(String[] args) {
 
-        Animal firstAnimal = new Animal("Roky",6,7,3, "Jr Canin","Running" );
+        Animal firstAnimal = new Animal();
+        firstAnimal.setName("Roky");
+        firstAnimal.setSpirit(5);
+        firstAnimal.setHungry(7);
+        firstAnimal.setHealth(9);
+        firstAnimal.setFavactivity("Running");
 
-        Adopter firstAdopter = new Adopter("Andrei",500);
+        Adopter firstAdopter = new Adopter();
+        firstAdopter.setMoney(500);
+        firstAdopter.setName("Andrei");
 
-        Food firstFood = new Food("Jr Canin",30.5,20,2020, true );
+        Food firstFood = new Food();
+        firstFood.setName("Canin");
+        firstFood.setPrice(300);
+        firstFood.setQuantity(40);
+        firstFood.setYear(LocalDate.of(2020,11,20));
+        firstFood.setInStock(true);
 
-        RecreationActivity firstRecreation = new RecreationActivity("Running");
+        System.out.println(firstFood.getYear());
 
-        Doctor firstDoctor = new Doctor("Dr.Marcu","dog specialization");
+        RecreationActivity firstRecreation = new RecreationActivity();
+        firstRecreation.setName("Running");
 
-        Dog firstDog = new Dog("Rex",8,3,9,"Cane","Running",true,true);
+        Doctor firstDoctor = new Doctor();
+        firstDoctor.setName("Dr.Marcu");
+        firstDoctor.setSpecialization("dog specialization");
+
+        System.out.println(firstDoctor.getName());
+        System.out.println(firstDoctor.getSpecialization());
+
+        Dog firstDog = new Dog();
+        firstDog.setName("Rex");
+        firstDog.setHealth(5);
+        firstDog.setHungry(9);
+        firstDog.setSpirit(3);
+        firstDog.setFavactivity("Sleep");
+        firstDog.setFavfood("Canino");
+        firstDog.setInHouse(true);
+        firstDog.setBark(true);
 
         Game newGame = new Game();
-        newGame.adopter = firstAdopter;
-        newGame.doctor = firstDoctor;
-        newGame.dog = firstDog;
-
+        newGame.setAdopter(firstAdopter);
+        newGame.setDoctor(firstDoctor);
+        newGame.setDog(firstDog);
     }
 }
