@@ -24,16 +24,16 @@ public class App {
         firstAdopter.setName("Andrei");
 
         Food firstFood = new Food();
-        firstFood.setName("Canin");
+        firstFood.setName("Canino Pedigree");
         firstFood.setPrice(300);
         firstFood.setQuantity(40);
-        firstFood.setYear(LocalDate.of(2020,11,20));
+        firstFood.setYear(LocalDate.of(2020, 11, 20));
         firstFood.setInStock(true);
 
         System.out.println(firstFood.getYear());
 
         RecreationActivity firstRecreation = new RecreationActivity();
-        firstRecreation.setName("Running");
+        firstRecreation.setName("catch the ball");
 
         Doctor firstDoctor = new Doctor();
         firstDoctor.setName("Dr.Marcu");
@@ -56,5 +56,8 @@ public class App {
         newGame.setAdopter(firstAdopter);
         newGame.setDoctor(firstDoctor);
         newGame.setDog(firstDog);
+
+        firstAdopter.feeding(firstAnimal, firstFood);
+        firstAdopter.recreation(firstAnimal,firstRecreation);
     }
-}
+    }

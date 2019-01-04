@@ -24,4 +24,11 @@ public class Adopter {
     public void setMoney(double money) {
         this.money = money;
     }
+public void feeding (Animal animal,Food food){
+    System.out.println( name + " just gave some " + food.name + " to " + animal.name );
+
+    }
+    public void recreation(Animal animal, RecreationActivity activity) {
+        System.out.println(name + " go out with " + animal.name + " to " + activity.name );
+    }
 }

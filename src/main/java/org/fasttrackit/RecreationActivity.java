@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 public class RecreationActivity {
-   private String name;
+    protected String name;
 
 //    public RecreationActivity(String name) {
 //        this.name = name;
@@ -14,5 +14,6 @@ public class RecreationActivity {
     public void setName(String name) {
         this.name = name;
     }
-}
 
+
+}

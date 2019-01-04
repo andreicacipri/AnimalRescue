@@ -4,7 +4,7 @@ package org.fasttrackit;
 import java.time.LocalDate;
 
 public class Food {
-   private String name;
+   protected String name;
    private double price;
    private double  quantity;
    private LocalDate year;
