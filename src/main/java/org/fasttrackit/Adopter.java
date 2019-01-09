@@ -25,10 +25,10 @@ public class Adopter {
         this.money = money;
     }
 public void feeding (Animal animal,Food food){
-    System.out.println( name + " just gave some " + food.name + " to " + animal.name );
+    System.out.println( getName() + " just gave some " + food.getName() + " to " + animal.getName());
 
     }
     public void recreation(Animal animal, RecreationActivity activity) {
-        System.out.println(name + " go out with " + animal.name + " to " + activity.name );
+        System.out.println(getName() + " go out with " + animal.getName() + " to " + activity.getName());
     }
 }
