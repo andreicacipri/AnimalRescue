@@ -15,4 +15,5 @@ public class Pet extends Animal {
     public void setInHouse(Boolean inHouse) {
         this.inHouse = inHouse;
     }
+
 }

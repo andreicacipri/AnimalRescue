@@ -64,4 +64,10 @@ public class Animal {
     public void setFavactivity(String favactivity) {
         this.favactivity = favactivity;
     }
+
+    public void spiritlevel (Animal animal){
+        System.out.println(" level spirit of  "+getName() + " is " + animal.getSpirit()+ ", he is very happy ");
+
+    }
+
 }

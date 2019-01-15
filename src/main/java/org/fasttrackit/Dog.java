@@ -14,4 +14,8 @@ public class Dog extends Pet {
     public void setBark(boolean bark) {
         this.bark = bark;
     }
+    public void spiritlevel (Animal animal){
+        System.out.println(" level spirit of  "+getName() + " is " + animal.getSpirit()+ ", He bark and he wag his tail ");
+
+    }
 }
