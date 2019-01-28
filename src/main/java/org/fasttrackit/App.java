@@ -1,9 +1,6 @@
 package org.fasttrackit;
 
-import sun.util.resources.LocaleData;
-
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 /**
  * Hello world!
@@ -17,8 +14,8 @@ public class App {
         firstAnimal.setSpirit(5);
         firstAnimal.setHungry(7);
         firstAnimal.setHealth(9);
-        firstAnimal.setFavactivity("Running");
-
+        firstAnimal.setFavactivity("catch the ball");
+        firstAnimal.setFavfood("Canino Pedigree");
         Adopter firstAdopter = new Adopter();
         firstAdopter.setMoney(500);
         firstAdopter.setName("Andrei");
