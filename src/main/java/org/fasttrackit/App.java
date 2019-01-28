@@ -62,7 +62,7 @@ public class App {
         Game newGame = new Game();
         newGame.setAdopter(firstAdopter);
         newGame.setDoctor(firstDoctor);
-
+        newGame.start();
         firstAdopter.feeding(firstAnimal, firstFood);
         firstAdopter.recreation(firstAnimal,firstRecreation);
         firstAnimal.spiritlevel(firstAnimal);
