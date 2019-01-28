@@ -42,30 +42,29 @@ public class App {
         System.out.println(firstDoctor.getName());
         System.out.println(firstDoctor.getSpecialization());
 
-        Dog firstDog = new Dog();
+        Animal firstDog = new Dog();
         firstDog.setName("Rex");
         firstDog.setHealth(5);
         firstDog.setHungry(9);
         firstDog.setSpirit(8);
         firstDog.setFavactivity("Sleep");
         firstDog.setFavfood("Canino");
-        firstDog.setInHouse(true);
-        firstDog.setBark(true);
+        ((Dog) firstDog).setInHouse(true);
+        ((Dog) firstDog).setBark(true);
 
-        Cat firstCat = new Cat();
+        Animal firstCat = new Cat();
         firstCat.setName("Lili");
         firstCat.setHealth(5);
         firstCat.setHungry(9);
         firstCat.setSpirit(7);
         firstCat.setFavactivity("to purr");
         firstCat.setFavfood("walkers");
-        firstCat.setInHouse(true);
-        firstCat.setMew(true);
+        ((Cat) firstCat).setInHouse(true);
+        ((Cat) firstCat).setMew(true);
 
         Game newGame = new Game();
         newGame.setAdopter(firstAdopter);
         newGame.setDoctor(firstDoctor);
-        newGame.setDog(firstDog);
 
         firstAdopter.feeding(firstAnimal, firstFood);
         firstAdopter.recreation(firstAnimal,firstRecreation);
