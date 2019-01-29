@@ -10,12 +10,15 @@ public class Game {
     private RecreationActivity[] availableActivities = new RecreationActivity[10];
    private List<Food> avilableFood = new ArrayList<>();
 
-    private void initFood(int foodCount) {
-        for (int i = 0; i < foodCount; i++) {
-        Food food = new Food();
+    private void initFood() {
+        Food firstFood = new Food();
+        firstFood.setName("Canino ECO");
+        avilableFood.add(firstFood);
+        Food secondFood = new Food();
+        secondFood.setName("Whiskas");
+        avilableFood.add(secondFood);
         }
 
-    }
     public void displayAvailableFood() {
         System.out.println(" Available food are :");
         for (int i = 0; i < avilableFood.size(); i++) {
@@ -24,13 +27,20 @@ public class Game {
 
         }
     }
-    private void initActivities(int index, RecreationActivity recreationActivity) {
-        availableActivities[index] = recreationActivity;
+    private void initActivities() {
+        RecreationActivity firsActivity = new RecreationActivity();
+        firsActivity.setName("Running");
+        RecreationActivity secondActivity = new RecreationActivity();
+        secondActivity.setName("to purr");
+        availableActivities[0] = new RecreationActivity();
+        availableActivities[0] = firsActivity;
+        availableActivities[1] = new RecreationActivity();
+        availableActivities[1] = secondActivity;
     }
 
 
     public void displayAvailableActivities() {
-        System.out.println("Available activities");
+        System.out.println("Available activities:");
         for (RecreationActivity recreationActivity : availableActivities) {
             if (recreationActivity != null) {
                 System.out.println(recreationActivity.getName());
@@ -38,25 +48,8 @@ public class Game {
         }
     }
     public void start() {
-        initFood(2);
-        Food firstFood = new Food();
-        firstFood.setName("Canino ECO");
-        avilableFood.add(firstFood);
-        Food secondFood = new Food();
-        secondFood.setName("Whiskas");
-        avilableFood.add(secondFood);
-
-
-
-        RecreationActivity firstActivity = new RecreationActivity();
-         firstActivity.setName("Running");
-
-         initActivities(0, firstActivity);
-
-        RecreationActivity secondActivity = new RecreationActivity();
-        secondActivity.setName("to purr");
-
-        initActivities(1, secondActivity);
+        initFood();
+        initActivities();
         displayAvailableActivities();
         displayAvailableFood();
     }
