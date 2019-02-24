@@ -57,7 +57,7 @@ public class App {
 //      ((Cat) firstCat).setInHouse(true);
 //      ((Cat) firstCat).setMew(true);
 
-        Game newGame = new Game();
+        Game newGame = new Game() ;
         //newGame.setAdopter(firstAdopter);
         //newGame.setDoctor(firstDoctor);
         newGame.start();

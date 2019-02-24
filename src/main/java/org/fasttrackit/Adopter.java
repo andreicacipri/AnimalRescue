@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class Adopter {
    private String name;
-   private double money;
+
 
 //    public Adopter(String name, double money) {
 //        this.name = name;
@@ -15,14 +15,6 @@ public class Adopter {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public double getMoney() {
-        return money;
-    }
-
-    public void setMoney(double money) {
-        this.money = money;
     }
 public void feeding (Animal animal,Food food) {
     System.out.println("Level of hungy is " + animal.hungry);
